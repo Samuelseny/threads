@@ -32,7 +32,6 @@ def professor_processo(queue, lock, professor_id):
 
 
 if __name__ == "__main__":
-    multiprocessing.set_start_method("spawn")
     fila_provas = multiprocessing.Queue()
     lock = multiprocessing.Lock()
 
